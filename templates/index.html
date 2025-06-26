@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo de Sobrevivência</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="tela">
+    <h1>Jogo de Sobrevivência na Floresta</h1>
+    <p><a href="/instrucoes">Instruções</a></p>
+    <p>Vida: {{ status.vida }} | Energia: {{ status.energia }} | Pontos: {{ status.pontuacao }}</p>
+    <p>Mochila: {{ status.mochila }} {% if status.veneno %}<strong>(Envenenado)</strong>{% endif %}</p>
+    <div class="botoes">
+        <a href="/acao/comida">Buscar comida</a>
+        <a href="/acao/descansar">Descansar</a>
+        <a href="/acao/explorar">Explorar</a>
+        <a href="/acao/curar">Curar</a>
+        <a href="/acao/abrigo">Construir abrigo</a>
+        <a href="/acao/plantar">Plantar</a>
+        <a href="/acao/colher">Colher</a>
+        <a href="/acao/cacar">Caçar</a>
+        <a href="/acao/comer">Comer carne</a>
+        <a href="/acao/norte">Ir para o norte</a>
+        <a href="/acao/sul">Ir para o sul</a>
+        <a href="/acao/leste">Ir para o leste</a>
+        <a href="/acao/oeste">Ir para o oeste</a>
+    </div>
+    <h3>Últimas ações:</h3>
+    <ul>{% for msg in status.log %}<li>{{ msg }}</li>{% endfor %}</ul>
+</div>
+</body>
+</html>

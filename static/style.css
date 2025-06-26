@@ -1,0 +1,6 @@
+body {font-family:Arial,sans-serif;background:#1f4e1f;color:white;text-align:center;padding:20px;}
+.tela {background-color:#000000b3;margin:auto;padding:20px;border-radius:10px;width:420px;}
+.botoes a {display:block;margin:6px auto;padding:10px;background:#4caf50;color:white;text-decoration:none;border-radius:5px;width:80%;}
+.botoes a:hover {background:#388e3c;}
+strong {color:yellow;}
+ul {list-style-type:none;padding-left:0;}

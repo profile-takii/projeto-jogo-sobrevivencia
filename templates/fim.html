@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<title>Fim do Jogo</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="tela">
+<h1>Fim do Jogo</h1>
+<p>{{ status.mensagem }}</p>
+<p>Vida: {{ status.vida }} | Energia: {{ status.energia }}</p>
+<p>Pontuação: {{ status.pontuacao }}</p>
+<p>Mochila: {{ status.mochila }}</p>
+<a href="/reiniciar">Reiniciar jogo</a>
+</div></body></html>
